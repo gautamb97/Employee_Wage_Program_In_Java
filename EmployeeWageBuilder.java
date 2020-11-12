@@ -6,9 +6,7 @@ public class EmployeeWageBuilder {
 	public static final int NUM_OF_WORKING_DAYS = 2;
 	public static final int MAX_HRS_IN_MONTH = 10;
 	
-	public static void main(String[] args) {
-		//WELCOME TO EMPLOYEE WAGE COMPUTATION
-		System.out.println("WELCOME TO EMPLOYEE WAGE COMPUTAION");
+	public static int computeEmpWage() {
 		//Variables
 		int empHrs = 0, totalEmpHrs = 0, totalWorkingDays = 0;
 		//Computation
@@ -30,6 +28,11 @@ public class EmployeeWageBuilder {
 		}
 		int totalEmpWage = totalEmpHrs * EMP_RATE_PER_HOUR;
 		System.out.println("Total Emp Wage: " + totalEmpWage);
+		return totalEmpWage;
 	}
-
+	public static void main(String[] args) {
+		//WELCOME TO EMPLOYEE WAGE COMPUTATION
+			System.out.println("WELCOME TO EMPLOYEE WAGE COMPUTAION");
+		computeEmpWage();
+	}
 }
